@@ -1,0 +1,49 @@
+:root{
+    --baseColor: rgb(137, 153, 254);
+    --contrastingColor: orange;
+    --secondaryColor:rgb(119, 222, 188);
+    --shadowColor: rgba(141, 41, 24, .5);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--baseColor);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.game-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+canvas{
+    border: 1px solid var(--contrastingColor);
+    border-radius: 5px;
+    margin: 10px;
+    background-color: var(--secondaryColor);
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--contrastingColor);
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px var(--shadowColor)
+}
