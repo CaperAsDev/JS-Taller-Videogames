@@ -90,7 +90,7 @@ button:hover{
 }
 
 
-@media screen and (max-width: 450px), (max-height:450px){
+@media screen and (max-width: 550px), (max-height:550px){
     .status{
         flex-direction: row;
         margin: 10px 0;
