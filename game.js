@@ -141,6 +141,7 @@ function gameFinished(status) {
       }
     } else {
       localStorage.setItem("timeRecord", JSON.stringify(mytime));
+      statusRecord.innerHTML = mytime.string;
     }
   }
 }
