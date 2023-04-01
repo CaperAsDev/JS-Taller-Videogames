@@ -8,10 +8,20 @@
     <title>Game</title>
   </head>
   <body>
+    <header class="header-container">
+      <h1 class="header-title">💥 Calabozo explosivo 💥</h1>
+    </header>
     <div class="game-container">
       <canvas id="game"></canvas>
 
       <div class="aside">
+        <div class="status">
+          <div class="lifes"></div>
+          <div class="status__times">
+            <div><p class="status__label">Mi Tiempo: <span class="status__time status__data"></span></p> </div>
+            <div><p class="status__label">Record: <span class="status__record status__data"></span></p></div>
+          </div>
+        </div>
         <div class="btns">
           <button id="ArrowUp">Arriba</button>
 
@@ -21,12 +31,6 @@
           </div>
 
           <button id="ArrowDown">Abajo</button>
-        </div>
-
-        <div class="status">
-          <div class="lifes">
-            <p>vidas</p>
-          </div>
         </div>
       </div>
     </div>
